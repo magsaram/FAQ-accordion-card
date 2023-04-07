@@ -13,5 +13,8 @@
 }
 
 body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(var(--softViolet, var(--softBlue)));
   font-family: "Kumbh Sans", sans-serif;
 }
