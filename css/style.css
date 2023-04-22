@@ -140,4 +140,8 @@ footer a {
     margin-bottom: 35px;
     text-align: left;
   }
+  .question h2:hover {
+    font-weight: 700;
+    cursor: pointer;
+  }
 }
