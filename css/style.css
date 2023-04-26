@@ -32,7 +32,7 @@ body {
 .img {
   position: relative;
   margin: 0 auto;
-  width: 75%;
+  width: 237px;
 }
 .img picture {
   position: absolute;
@@ -96,45 +96,48 @@ footer a {
 }
 @media (min-width: 1024px) {
   .frame {
+    position: relative;
     box-sizing: border-box;
-    padding-top: 65px;
+    padding-top: 0;
     padding-right: 95px;
     margin: 50px auto 10px;
     width: 920px;
     max-width: 920px;
     display: flex;
-    overflow: hidden;
     justify-content: space-between;
   }
   .img {
     margin: 0;
-    width: 50%;
+    width: 450px;
+    overflow: hidden;
   }
   .img picture {
     position: absolute;
   }
   .img picture:first-of-type img {
     width: 100%;
+    top: 0;
   }
   .img picture:nth-of-type(1) {
     width: 964px;
     left: -550px;
-    top: -360px;
+    top: -300px;
   }
   .img picture:nth-of-type(2) {
     width: 472px;
     left: -60px;
-    top: 0px;
+    top: 50px;
   }
   .box {
     display: block;
     position: absolute;
-    top: 250px;
-    left: 0px;
+    top: 180px;
+    left: -90px;
+    z-index: 100;
   }
   .faq {
     width: 40%;
-    margin: 0;
+    margin: 60px 0 60px 0;
   }
   h1 {
     margin-bottom: 35px;
@@ -143,5 +146,6 @@ footer a {
   .question h2:hover {
     font-weight: 700;
     cursor: pointer;
+    color: var(--softRed);
   }
 }
